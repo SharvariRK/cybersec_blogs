@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <metaa http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Post Page</title>
+        <!-- link to CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Box ICONS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </metaa>
+        
+    </head>
+    <body>
+            <!--header-->
+            <header>
+                <!--nav-->>
+                <div class="nav container">
+                <!--logo-->
+                <a href="index.html" class="logo">Cyber<span>Security</span></a>
+                <!--login btn-->
+                <a href="#" class="login">Login</a>
+            </div>
+            </header>
+<!--post content-->
+<section class="post-header">
+    <div class="header-content post-container">
+    <!--back to home-->
+    <a href="index.html" class="back-home">Back to Home</a>
+    <h1 class="header-title">Basics of CySec</h1>
+    <!--post image-->
+    <img src="C:\Users\sharv\OneDrive\Documents\blog\learn_new.jpg" alt="" class="header-img">
+
+</div>
+</section>
+
+
+<!--posts-->
+<section class="post-content post-container">
+    <h2 class="sub-heading">The OSI Model</h2>
+    <p class="post-text">The OSI ("Open Systems Interconnection") model represents an easy and intuitive way to standardize the different parts required to communicate across networks.
+        The model makes it clear what is required to communicate on a network by splitting the requirements into multiple layers. 
+        This is what the OSI Model looks like:</p>
+        <img src="C:\Users\sharv\OneDrive\Documents\blog\osi ss.png" alt="">
+        <img src="C:\Users\sharv\OneDrive\Documents\blog\osi ss 2.png" alt="">
+        <p class="post-text">DN ("Software Defined Networking") is technology which allows more layers of the hardware to be implemented via software.</p>
+    <p class="post-text">Layer 7 - Application Layer : <br>
+        The business logic and functionality of the application lies here. This is what the users use to interact with services across a network. Most developers create applications on the Application Layer.
+        
+        Most of the applications you use are on the Application Layer, with the complexity of the other layers hidden.
+        
+        Examples of Layer 7 Applications:<br>
+        
+        HTTP ("Hypertext Transfer Protocol") - Enables us to access web applications<br>
+        FTP ("File Transfer Protocol") - Allows users to transfer files<br>
+        SNMP ("Simple Network Management Protocol") - Protocol to read and update network device configurations<br>
+        There are many applications which uses these protocols like Google Chrome, Microsoft Skype and FileZilla.</p>
+    <p class="post-text">Layer 6 - Presentation Layer : <br>
+        Typically an unseen layer, but is responsible of adapting, transforming and translating data. This is to ensure the application and layers beneath can understand one another.
+        
+        Encoding Schemes used to represent text and data, for example ASCII(American Standard Code for Information Interchange) and UTF(Unicode Transformation Format).<br>
+        Encryption for services, for example SSL ("Secure Sockets Layer") and TLS ("Transport Security Layer")<br>
+        Compression, for example GZip in use in many implementations of HTTP.</p>
+    <p class="post-text">Layer 5 - Session Layer : <br>
+        This layer's responsibility is handling connections between the application and the layers below. It involves establishing, maintaining and terminating connections, otherwise referred to as sessions.
+       
+       Common protocols which represent the Session Layer well are:<br>
+       
+       1. SOCKS - A protocol for sending packets through a proxy server.<br>
+       2. NetBIOS - An older Windows protocol for establishing sessions and resolving names.<br>
+       3. SIP ("Session Initiation Protocol") - For engaging in VOIP ("Voice Over IP") communications</p>
+    <p class="post-text">Layer 4 - Transport : <br>
+        The layer which allows applications to be represented on the network.
+        
+        Some well known applications on this layer:<br>
+        
+        1. TCP ("Transmission Control Protocol") - Used for many applications, ensuring stability, control of how much data can be sent at any given time, reliability and more.<br>
+        2. UDP ("User Datagram Protocol") - Lightweight and quick protocol use for many services.<br>
+        3. QUIC ("Quick UDP Internet Connections") - A protocol designed for faster connections and goes hand-in-hand with the version 2 of the HTTP protocol.</p>
+    <p class="post-text">Layer 3 - Network : <br>
+        A layer responsible of routing packets between networks via routers.
+        
+        On this layer, the following protocols reside:<br>
+        
+        > IP ("Internet Protocol") - Used everyday when accessing the Internet. Comes in two versions, IP version 4 and 6.<br>
+        > ICMP ("Internet Control Message Protocol") - Used by network devices and network operators, to diagnose network connections or for devices to send and respond to error conditions and more.<br>
+        > IPSec ("Internet Protocol Security") - Allows encrypted and secure connections between two network devices.</p>
+    <p class="post-text">Layer 2 - Link : <br>
+        Link networks, as the name implies, consist of protocols designed to send packets through the actual links (physical connections) that network nodes are connected to. A simpler way of thinking of it is that the Link Layer is responsible for moving data from physical over to logical (to the network layer).
+        
+        Protocols on this layer include:<br>
+        
+        > Ethernet - An essential protocol used by most operating systems when connecting to networks using a physical cable.<br>
+        > Wi-Fi ("Wireless Fidelity") - For accessing networks via radio signals. It uses a family of protocols called IEEE 802.11.xx<br>
+        > NDP ("Neighbor Discovery Protocol") - IP version 6(IPv6) uses this protocol on the Link Layer to gather information required to communicate via IPv6</p>
+    <p class="post-text">Layer 1 - Physical : <br>
+        Physical layer represents the signaling which allows bits and bytes to transfer between a physical medium. It can be transferred via radio or signals over a cable, using electrical signals or light, for example fiber.
+        
+        Examples of the Physical Layer protocols includes:<br>
+        
+        > CAN Bus ("Controller Area Network") - Used in microcontrollers and other devices to communicate to other similar devices, not involving a computer. Often used in ICS ("Industrial Control Systems").<br>
+        > Ethernet Physical Layer - Used by Ethernet on the physical layer to send signals with speeds up to many gigabits of traffic per second.<br>
+        > Bluetooth Physical Layer - Bluetooth also has its own specifications on how radio signals should be sent and received.</p>
+    <p class="post-text"></p>
+    </section>
+    <!--share-->
+    <div class="share post-container">
+        <span class="share-title">Share & Spread Awareness</span>
+        <div class="social">
+            <a href="https://www.facebook.com/r.php"><i class="bx bxl-facebook" ></i></a>
+            <a href="#"><i class="bx bxl-twitter" ></i></a>
+            <a href="#"><i class="bx bxl-instagram" ></i></a>
+            <a href="#"><i class="bx bxl-linkedin" ></i></a>
+    
+        </div>
+        </span>
+    </div> 
+    <!--footer-->
+    <div class="footer container"></div>
+    <p>&#169; SharvariRajTej All Rights Reserved</p>
+    <div class="social">
+        <a href="https://www.facebook.com/r.php"><i class="bx bxl-facebook" ></i></a>
+        <a href=""><i class="bx bxl-twitter" ></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="bx bxl-instagram" ></i></a>
+        <a href="#"><i class="bx bxl-linkedin" ></i></a>
+
+    </div>
+     
+    <!--JQuery link-->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+    <!--link to JS-->
+         <script src="js/main.js"></script>
+        </body>
+        </html>

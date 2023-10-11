@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <metaa http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Post Page</title>
+        <!-- link to CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Box ICONS -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        </metaa>
+        
+    </head>
+    <body>
+            <!--header-->
+            <header>
+                <!--nav-->>
+                <div class="nav container">
+                <!--logo-->
+                <a href="index.html" class="logo">Cyber<span>Security</span></a>
+                <!--login btn-->
+                <a href="#" class="login">Login</a>
+            </div>
+            </header>
+<!--post content-->
+<section class="post-header">
+    <div class="header-content post-container">
+    <!--back to home-->
+    <a href="index.html" class="back-home">Back to Home</a>
+    <h1 class="header-title">What is Burp Suite?</h1>
+    <!--post image-->
+    <img src="C:\Users\sharv\OneDrive\Documents\blog\burp-suite.webp" alt="" class="header-img">
+
+</div>
+</section>
+
+
+<!--posts-->
+<section class="post-content post-container">
+    <h2 class="sub-heading">Burp or Burp Suite is a set of tools used for penetration testing of web applications.</h2>
+    <p class="post-text">Burp or Burp Suite is a set of tools used for penetration testing of web applications. It is developed by the company named Portswigger, which is also the alias of its founder Dafydd Stuttard. BurpSuite aims to be an all in one set of tools and its capabilities can be enhanced by installing add-ons that are called BApps.
+        It is the most popular tool among professional web app security researchers and bug bounty hunters. Its ease of use makes it a more suitable choice over free alternatives like OWASP ZAP. Burp Suite is available as a community edition which is free, professional edition that costs $399/year and an enterprise edition that costs $3999/Year. This article gives a brief introduction to the tools offered by BurpSuite. If you are a complete beginner in Web Application Pentest/Web App Hacking/Bug Bounty, we would recommend you to just read through without thinking too much about a term.
+        
+        The tools offered by BurpSuite are:<br></p>
+    <p class="post-text">1. Spider:<br>
+        It is a web spider/crawler that is used to map the target web application. The objective of the mapping is to get a list of endpoints so that their functionality can be observed and potential vulnerabilities can be found. Spidering is done for a simple reason that the more endpoints you gather during your recon process, the more attack surfaces you possess during your actual testing.</p>
+    <p class="post-text">2. Proxy:<br>
+        BurpSuite contains an intercepting proxy that lets the user see and modify the contents of requests and responses while they are in transit. It also lets the user send the request/response under monitoring to another relevant tool in BurpSuite, removing the burden of copy-paste. The proxy server can be adjusted to run on a specific loop-back ip and a port. The proxy can also be configured to filter out specific types of request-response pairs.</p>
+    <p class="post-text">3. Intruder:<br>
+        It is a fuzzer. This is used to run a set of values through an input point. The values are run and the output is observed for success/failure and content length. Usually, an anomaly results in a change in response code or content length of the response. BurpSuite allows brute-force, dictionary file and single values for its payload position. The intruder is used for:
+
+        >Brute-force attacks on password forms, pin forms, and other such forms.<br>
+        >The dictionary attack on password forms, fields that are suspected of being vulnerable to XSS or SQL injection.<br>
+        >Testing and attacking rate limiting on the web-app.</p>
+    <p class="post-text">4. Repeater:<br>
+        Repeater lets a user send requests repeatedly with manual modifications. It is used for:<br>
+
+        -Verifying whether the user-supplied values are being verified.<br>
+        -If user-supplied values are being verified, how well is it being done?<br>
+        -What values is the server expecting in an input parameter/request header?<br>
+        -How does the server handle unexpected values?<br>
+        -Is input sanitation being applied by the server?<br>
+        -How well the server sanitizes the user-supplied inputs?<br>
+        -What is the sanitation style being used by the server?<br>
+        -Among all the cookies present, which one is the actual session cookie.<br>
+        -How is CSRF protection being implemented and if there is a way to bypass it?<br>
+        5. Sequencer:<br>
+        The sequencer is an entropy checker that checks for the randomness of tokens generated by the webserver. These tokens are generally used for authentication in sensitive operations: cookies and anti-CSRF tokens are examples of such tokens. Ideally, these tokens must be generated in a fully random manner so that the probability of appearance of each possible character at a position is distributed uniformly. This should be achieved both bit-wise and character-wise. An entropy analyzer tests this hypothesis for being true. It works like this: initially, it is assumed that the tokens are random. Then the tokens are tested on certain parameters for certain characteristics. A term significance level is defined as a minimum value of probability that the token will exhibit for a characteristic, such that if the token has a characteristics probability below significance level, the hypothesis that the token is random will be rejected. This tool can be used to find out the weak tokens and enumerate their construction.<br></p>
+        6. Decoder:<br>
+        Decoder lists the common encoding methods like URL, HTML, Base64, Hex, etc. This tool comes handy when looking for chunks of data in values of parameters or headers. It is also used for payload construction for various vulnerability classes. It is used to uncover primary cases of IDOR and session hijacking.<br>
+        7. Extender:<br>BurpSuite supports external components to be integrated into the tools suite to enhance its capabilities. These external components are called BApps. These work just like browser extensions. These can be viewed, modified, installed, uninstalled in the Extender window. Some of them are supported on the community version, but some require the paid professional version.<br>
+        <p class="post-text">8. Scanner:<br>The scanner is not available in the community edition. It scans the website automatically for many common vulnerabilities and lists them with information on confidence over each finding and their complexity of exploitation. It is updated regularly to include new and less known vulnerabilities.
+        </p>
+    </section>
+    <!--share-->
+    <div class="share post-container">
+        <span class="share-title">Share & Spread Awareness</span>
+        <div class="social">
+            <a href="https://www.facebook.com/r.php"><i class="bx bxl-facebook" ></i></a>
+            <a href="#"><i class="bx bxl-twitter" ></i></a>
+            <a href="#"><i class="bx bxl-instagram" ></i></a>
+            <a href="#"><i class="bx bxl-linkedin" ></i></a>
+    
+        </div>
+        </span>
+    </div> 
+    <!--footer-->
+    <div class="footer container"></div>
+    <p>&#169; SharvariRajTej All Rights Reserved</p>
+    <div class="social">
+        <a href="https://www.facebook.com/r.php"><i class="bx bxl-facebook" ></i></a>
+        <a href=""><i class="bx bxl-twitter" ></i></a>
+        <a href="https://www.instagram.com/?hl=en"><i class="bx bxl-instagram" ></i></a>
+        <a href="#"><i class="bx bxl-linkedin" ></i></a>
+
+    </div>
+     
+    <!--JQuery link-->
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+
+    <!--link to JS-->
+         <script src="js/main.js"></script>
+        </body>
+        </html>
